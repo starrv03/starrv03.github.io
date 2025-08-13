@@ -42,10 +42,9 @@
     },
     {
       "name": "Sam Price",
-      "course": "science",
+      "course": "math",
       "grades": [
         99,
-        100,
         100
       ],
       "attendance": 100,
@@ -55,6 +54,6 @@
   ],
   "metadata": {
     "totalRecords": 4,
-    "lastUpdated": "2025-08-10T18:52:27.287Z"
+    "lastUpdated": "2025-08-13T16:47:32.313Z"
   }
 }

@@ -7,7 +7,9 @@ let gradeSystemData={
     records: [],
     metadata: {
         totalRecords: 0,
-        lastUpdated: new Date().toISOString()
+        get lastUpdated(){
+            return new Date().toISOString();
+        }
     }
 };
 
@@ -39,6 +41,7 @@ export function removeRecord(id) {
     const idx=gradeSystemData.records.indexOf(record);
     gradeSystemData.records.splice(idx,1);
     gradeSystemData.metadata.totalRecords--;
+    gradeSystemData.metadata.lastUpdated;
     saveData();
     return {status:true,msg:""};
 }
@@ -231,7 +234,9 @@ function seed(){
         records: [],
         metadata: {
             totalRecords: 0,
-            lastUpdated: new Date().toISOString()
+            get lastUpdated(){
+                return new Date().toISOString();
+            }
         }
     };
     saveData();
@@ -263,6 +268,8 @@ function seed(){
         attendance: 100,
         status: "active"
     };
+    addRecord(newRecord);
+    newRecord={name:"Sam Price",course:"math",grades:[99,100],attendance:100,status:"active"};
     addRecord(newRecord);
 }
 
@@ -344,9 +351,8 @@ function initialTest(){
 //Main Program
 
 function main() {
-   //console.log(addRecord({name:"Sam Price",course:"math",grades:[99,100],attendance:100,status:"active"}));
-   console.log(updateRecord(4,{"course":"science"}));
+   seed();
 }
 
 // Start the program
-main();
+//main();

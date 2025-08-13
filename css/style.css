@@ -1,0 +1,148 @@
+html,body{
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.col{
+    flex:1 1 min-content;
+}
+
+#title{
+    text-align: center;
+    font-size: 4rem;
+}
+
+header, header h1{
+    margin:0;
+    padding:0;
+}
+
+header{
+     background-color: antiquewhite;
+     padding:2rem;
+}
+
+article{
+    border:solid 1px black;
+    border-radius: 5px;
+    padding:2rem;
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 5px 5px 5px gray;
+}
+
+main div.row{
+    width:75%;
+    margin:0 auto;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+.name{
+    background-color: antiquewhite;
+    margin:0;
+    text-align: center;
+    font-size: 1.5rem;
+    padding:2rem;
+    border-radius: 5px;
+    border:solid 5px black;
+}
+
+.more-info{
+    text-decoration: underline;
+    font-weight: 900;
+    cursor:pointer;
+}
+
+.more-info:hover{
+    cursor:pointer;
+}
+
+.grades-div{
+    display: none;
+}
+
+article p{
+    transition: font-size 5s;
+}
+
+
+article p:hover{
+    font-size:2rem;
+}
+
+section{
+    margin:2rem;
+}
+
+
+form input, form select{
+    position: sticky;
+    left:50%;
+    padding:1rem;
+    border-radius: 5px;
+    height: 3rem;
+    width:100%;
+}
+
+form input[type="submit"]{
+    width:auto;
+    background-color: brown;
+    color:white;
+}
+form label{
+    width:100%;
+    text-align: center;
+}
+
+form div{
+    margin:1rem;
+}
+
+button.delete{
+    background-color: red;
+    color:white;
+    margin:1rem;
+    padding:1rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#add-new-grade-form{
+    margin:1rem auto;
+}
+
+#add-new-grade-form *{
+    width:100%;
+    margin:1rem auto;
+}
+
+@media(min-width:650px){
+    article{
+        width:min-content;
+    }
+    form input, form select{
+        width:50%;
+    }
+    form label{
+        text-align: left;
+    }
+}

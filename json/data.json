@@ -1,0 +1,48 @@
+{
+  "projectName": "Student Grade Tracker",
+  "records": [
+    {
+      "name": "Alice Johnson",
+      "course": "Mathematics",
+      "grades": [
+        85,
+        92,
+        78,
+        90
+      ],
+      "attendance": 95,
+      "status": "active",
+      "id": 1
+    },
+    {
+      "name": "Samantha Simons",
+      "course": "Chemistry",
+      "grades": [
+        75,
+        92,
+        96,
+        99
+      ],
+      "attendance": 100,
+      "status": "active",
+      "id": 2
+    },
+    {
+      "name": "Charles Smith",
+      "course": "Chemistry",
+      "grades": [
+        95,
+        92,
+        96,
+        99
+      ],
+      "attendance": 100,
+      "status": "active",
+      "id": 3
+    }
+  ],
+  "metadata": {
+    "totalRecords": 3,
+    "lastUpdated": "2025-08-10T18:52:27.287Z"
+  }
+}

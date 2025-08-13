@@ -29,6 +29,13 @@ List and briefly describe each function in your project:
 2. `removeRecord(id)`: removes a record
 3. `updateRecord(id,update)`: updates a record
 4. `searchRecord(id)`: searches a record by id
+5. `validateRecord(record)`: validates a record before creating or updating
+6. `getData()` : fetches data from json file
+7. `saveData()` : saves data to local storage
+8. `getRecords()` : gets all records
+9. `searchRecord(id)` : search records by id
+10. `getMetadata()` : gets metadata
+11. `getProjectName()` : gets project name
 
 ## How to Use
 Provide step-by-step instructions on how to use your application:

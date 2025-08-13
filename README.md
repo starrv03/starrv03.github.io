@@ -1,4 +1,4 @@
-# Week 1 Practicum: JavaScript Data Manipulation Project
+# Grade Tracker System
 
 ## Project Information
 - **Student Name**: Valencia Starr

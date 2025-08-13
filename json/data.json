@@ -39,10 +39,22 @@
       "attendance": 100,
       "status": "active",
       "id": 3
+    },
+    {
+      "name": "Sam Price",
+      "course": "science",
+      "grades": [
+        99,
+        100,
+        100
+      ],
+      "attendance": 100,
+      "status": "active",
+      "id": 4
     }
   ],
   "metadata": {
-    "totalRecords": 3,
+    "totalRecords": 4,
     "lastUpdated": "2025-08-10T18:52:27.287Z"
   }
 }

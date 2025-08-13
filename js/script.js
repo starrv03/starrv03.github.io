@@ -247,27 +247,27 @@ function init(){
             else{
                 if(key==="id"){
                     status=typeof record[key]==="number";
-                    if(!status) return {status,msg:status? "" : `${key} must be a number`};
+                    if(!status) return {status,msg:`${key} must be a number`};
                 }
                 else if(key==="name"){
                     status=typeof record[key]==="string" && isValidName(record[key]);
-                    if(!status) return {status,msg:status? "" : `${key} must be a string and have at least 3 letters`};
+                    if(!status) return {status,msg:`${key} must be a string and have at least 3 letters`};
                 }
                 else if(key==="course"){
                     status=typeof record[key]==="string" && isValidCourse(record[key]);
-                    if(!status) return {status,msg:status? "" : `${key} must be a string and have at least 3 letters`};
+                    if(!status) return {status,msg:`${key} must be a string and have at least 3 letters`};
                 }      
                 else if(key==="grades"){
                     status=Array.isArray(record[key]) && isNumberArr(record[key]) && isInRangeArr(record[key],0,100);
-                    if(!status) return {status,msg:status? "" : `${key} must be a list of number grades in the range 0 to 100 inclusive`};
+                    if(!status) return {status,msg:`${key} must be a list of number grades in the range 0 to 100 inclusive`};
                 }   
                 else if(key==="attendance"){
                     status=typeof record[key]==="number" && isInRange(record[key],0,100);
-                    if(!status) return {status,msg:status? "" : `${key} must be a number in the range 0 to 100 inclusive`};
+                    if(!status) return {status,msg:`${key} must be a number in the range 0 to 100 inclusive`};
                 }  
                 else{
                     status=typeof record[key]==="string" && (record[key]==="active" || record[key]==="inactive");
-                    if(!status) return {status,msg:status? "" : `${key} must be a string and have a value of active or inactive`};
+                    if(!status) return {status,msg:`${key} must be a string and have a value of active or inactive`};
                 }           
             }
         }
